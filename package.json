@@ -4,6 +4,8 @@
     "description": "",
     "main": "src/index.js",
     "scripts": {
+        "prebuild": "npm run test",
+        "build": "babel src --out-dir lib",
         "start": "babel-node src/index.js",
         "test": "babel-node spec/jasmine-run.js"
     },
